@@ -1,0 +1,215 @@
+<!--
+  ~ Copyright (c) 2018. <ashar786khan@gmail.com>
+  ~ This file is part of Alphanet's Android Application.
+  ~ Alphanet 's Android Application is free software : you can redistribute it and/or modify
+  ~ it under the terms of GNU General Public License as published by the Free Software Foundation,
+  ~ either version 3 of the License, or (at your option) any later version.
+  ~
+  ~ This Application is distributed in the hope that it will be useful
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  ~ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General  Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License along with this Source File.
+  ~  If not, see <http:www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string name="app_name">Alphanet</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Alphanet</string>
+    <string name="alphanet_market">Alphanet Market</string>
+    <string name="nav_header_subtitle">Alphanet : Neural Networks on Android</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="predict">Predict</string>
+    <string name="clear">Clear</string>
+    <string name="network_type">Network Type</string>
+    <string name="about">About</string>
+    <string name="support">Support</string>
+    <string name="simple_feed_forward">Feed Forward</string>
+    <string name="convolution_network">Convolution </string>
+    <string name="recurrent_network">Recurrent</string>
+    <string name="support_app">Support App</string>
+    <string name="share">Share</string>
+    <string name="something_went_wrong">Something Went Wrong</string>
+    <string name="view_open_source_licenses">View Open Source Licenses</string>
+    <string name="extra_details">Powered by TensorFlow v1.7</string>
+    <string name="share_message">Hey, I Just discovered this awesome android application that uses Neural Networks to predict
+        whatever you draw in it. It is called Alphanet.
+        Give it a try : https://play.google.com/store/apps/details?id=com.softminds.aislate</string>
+    <string name="neural_network_based_slate">Pre-trained Neural Networks\nPowered by Tensorflow Mobile</string>
+    <string name="cancelled">Transaction was Cancelled</string>
+    <string name="something_went_wrong_purchase">Something went wrong with your support</string>
+    <string name="failed_to_connect_gplay">Failed to Connect with Google Play. Try Again</string>
+    <string name="support_improve"><b>Show us your Love</b> \n\n\nYour Support will keep us motivated for building and improving this application.\n\n
+        Training a neural network on cloud costs a lot of money and time,
+        it will be very nice of you if you could show your support.\n\n
+        We don\'t show you annoying ads because we believe in delivering quality.
+        Hence Only source of revenue is this Donation.</string>
+    <string name="thanks_for_support">Thank You for Your Support</string>
+    <string name="support_done_message">Thank you for you support. We will constantly improve this application. </string>
+    <string name="support_done_2">That donation does counts, it will motivate the developer to work hard and improve this app.\n\n\nYou are a good person and rich too.</string>
+    <string name="okay">Okay</string>
+    <string name="support_sku_1">support_dollar_1</string>
+    <string name="support_sku_3">support_dollar_3</string>
+    <string name="support_sku_5">support_dollar_5</string>
+
+    <string name="support_with_1">Support with $ 1</string>
+    <string name="support_with_3">Support with $ 3</string>
+    <string name="support_with_5">Support with $ 5</string>
+    <string name="important_info">Important Information</string>
+    <string name="key_is_shown_info">is_shown_info</string>
+    <string name="pref_name">temp</string>
+    <string name="info_body">This application uses TensorFlow Mobile to perform Inference on Android.
+        These Models were trained on Cloud and have respectable accuracy in their architecture.
+        \n\nIf some unexpected outputs are being generated please have patience and we should fix
+        that soon. You can use the report section of the app to report such behaviours instead of
+        rating down. \n\nWe accept nothing is perfect and that this app may also have some issues.
+        \n\nThank you for using Alphanet</string>
+    <string name="agree">I Agree</string>
+    <string name="login_required">Login Required</string>
+    <string name="login_desc_required">You need to login to use the application. Login is required to serve you the contents and other in app services.</string>
+    <string name="login">Login</string>
+    <string name="failed_login">Failed to Login</string>
+    <string name="sign_in_required">You must sign in to use the app</string>
+    <string name="exit">Exit</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="retry_login">Retry login</string>
+    <string name="sure_to_download">Sure to download ?</string>
+    <string name="download">Download</string>
+    <string name="leave">Leave</string>
+    <string name="channel_name">Download Notification Channel of Alphanet</string>
+    <string name="channel_description">This channel shows the download progess of the models in Alphanet</string>
+    <string name="download_progress">Download in Progress…</string>
+    <string name="completed_download">Download Completed</string>
+    <string name="failed_download">Failed to download</string>
+    <string name="alphanet_inference">Alphanet Inference</string>
+    <string name="downloaded_models">Downloaded Models</string>
+    <string name="alphanet_tools">Alphanet Tools</string>
+    <string name="contribute_and_request">Contribute and Request</string>
+    <string name="support_us">Support Us</string>
+    <string name="slate_runner">Slate Runner</string>
+    <string name="input_runner">Raw Input Runner</string>
+    <string name="announcements">Announcements</string>
+    <string name="report">Report</string>
+    <string name="no_announcements">No Announcements</string>
+
+    <string name="no_email_app">No Application can send email to report</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="report_subject">Report about Alphanet</string>
+    <string name="my_email">ashar786khan@gmail.com</string>
+    <string name="downloaded">Downloaded Models</string>
+    <string name="download_recurrent">Recurrent Market</string>
+    <string name="download_conv">Convolution Market</string>
+    <string name="download_feed">Alphanet Market</string>
+    <string name="publish_model">Publish Model</string>
+
+    <string name="proceed_to_publish">Proceed to Publish</string>
+    <string name="publish_model_email_format">Publisher Name :: \nModel Name :: \nModel Type (FeedForward/Convolution/Recurrent) :: \nDescription of Model ::  \nNumber of Input Features :: \nDescribe each Input Feature :: \nType(Classification or Regression) :: \nAchieved Accuracy ::</string>
+    <string name="publish_model_text">By Publishing on Alphanet You agree to the following terms and conditions\n\n\n
+        1. I hereby accept that <b>I will be entirely responsible for any content published by me</b>. \n\n
+        2. I agree that I will maintain the standard of the app and will only publish <b>models that do not support any evil act</b> including but not limited to gambling, violence, Adult contents, etc.\n\n
+        3. I agree that I will be responsible for all the models I publish, <b>I will be responsible if my model damages or harms the users</b> including but not limited to hardware, software of the device.\n\n
+        4. <b>I give Alphanet authority to remove my model from market</b>, if my model violates any of the above terms and conditions.</string>
+    <string name="agree_to_terms">I agree to the above terms and conditions</string>
+    <string name="license">LICENCE</string>
+    <string name="app_description">Pre-trained Neural Network Market for Android</string>
+    <string name="name_of_the_model">Name of the Model</string>
+    <string name="description_of_your_model">Description of your model</string>
+    <string name="height_pixels">Height in Pixels</string>
+    <string name="width_in_pixels">Width in Pixels</string>
+    <string name="number_of_input_features">Number of Input Features</string>
+    <string name="number_of_output_nodes">Number of Output Nodes (1 for Regression)</string>
+    <string name="step_1_model_data">Step 1 Model Data</string>
+    <string name="selection_required">A Selection is required for Network Type</string>
+    <string name="step_2_models"><![CDATA[Step 2 Description]]></string>
+    <string name="step_3_models">Step 3 Performance</string>
+    <string name="accuracy_of_model">Accuracy of model</string>
+    <string name="number_of_hidden_layers">Number of hidden Layers</string>
+    <string name="final_cross_entropy">Final Cross Entropy</string>
+    <string name="choose_optimized_protobuffer_pb_file">Choose Optimized Proto-buffer (.pb) file</string>
+    <string name="name_of_file_publish">Name of chosen file will be here..</string>
+    <string name="submit_model">Submit Model</string>
+    <string name="name_and_source_of_dataset">Name and Source of Dataset</string>
+    <string name="feature_descriptions">Feature Descriptions</string>
+    <string name="label_description">Label Description</string>
+    <string name="yes">Yes</string>
+    <string name="progress_loss_warning">All your progress will be lost</string>
+    <string name="sure_to_leave">Sure to leave?</string>
+    <string name="no">No</string>
+    <string name="protobuf_missing_upload">You must choose a protobuffer file (.pb)</string>
+    <string name="proceed_to_step_2">Proceed to Step 2</string>
+    <string name="proceed_to_last_step">Proceed to Last Step</string>
+    <string name="cancelled_by_user">Cancelled by User</string>
+    <string name="no_readable_or_no_exist">The File was either not readable or no longer exists</string>
+    <string name="not_a_proto_file">Not a Protobuffer file</string>
+    <string name="upload_failed">Upload Failed</string>
+    <string name="model_published">Congrats Model was Published</string>
+    <string name="sequencial_pixel">Fill Sequential Pixel</string>
+    <string name="sure_to_clear">Sure to Clear</string>
+    <string name="clear_all_content_warn">Are you sure you want to clear all the contents of this form ?</string>
+    <string name="almost_done">Almost Done.. Sending Meta data</string>
+    <string name="uploading_proto">Uploading the proto file</string>
+    <string name="more_than_100_accuracy">No Model can be more accurate than 100%</string>
+    <string name="model_less_than_accuracy">Your model must be at least 75% accurate</string>
+    <string name="generative_adv_net">Generative Adv. Networks</string>
+    <string name="run_proto_file">Run Proto file</string>
+    <string name="faq">FAQs</string>
+    <string name="local_models">Run Locally</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_protobuffer_file">Choose Protobuffer</string>
+    <string name="click_chec_to_proceed">Click Checkbox to Continue</string>
+    <string name="may_take_long">It may take sometime to create lots of views. Wait</string>
+    <string name="dropout_probability_0_1">Dropout probability [0–1)</string>
+    <string name="run_this_model">Run this Model</string>
+    <string name="local_run_test_message">Checking model with Random inputs  Expecting a Random outputs of correct dimensions</string>
+    <string name="testing_model_message">Testing model with given properties</string>
+    <string name="model_requires_a_dropout_value_to_run">Model requires a dropout value to run</string>
+    <string name="invalid_output_dimen">Invalid Output Dimensions</string>
+    <string name="validation_failed">Validation Failed</string>
+    <string name="no_file_explorer">No File Explorer to handle this</string>
+    <string name="model_type_selection_is_missing">Model type is missing</string>
+    <string name="must_draw_something_to_slate">You must draw something in the slate</string>
+    <string name="slate_data_init_failed">Slate was not able to load model data</string>
+    <string name="slate_view">Slate View</string>
+    <string name="raw_input">Raw Input</string>
+    <string name="runner_ui">Runner UI</string>
+    <string name="progress_in_bar">Download Progress in Notification bar</string>
+    <string name="remove_model_req">Request Removal</string>
+    <string name="model_removal_request">Please write to us an email as to why you want some model to be removed. If you have published a model and want it to be removed you may need to prove your identity.</string>
+    <string name="removal_models_request">Request modal Removal</string>
+    <string name="remove_published_model_extra_message">1. Explain why you want to remove that model from market? If you are the publisher and want to remove your model. Mention your email id, full name as used to publish that model.</string>
+    <string name="already_downloading">A File is being download. Wait for it to finish</string>
+    <string name="sending_vote">Sending your Vote…</string>
+    <string name="download_cancelled">Download Cancelled</string>
+    <string name="cancel">Cancel</string>
+    <string name="input_prams">Input Parameters</string>
+    <string name="outputs_params">Outputs</string>
+    <string name="requires_following">Requires following inputs :</string>
+    <string name="raw_input_type_sheet">Runner UI : Raw Input</string>
+    <string name="slate_input_type_sheet">Runner UI : Slate View</string>
+    <string name="camera_type_input">Runner UI : Camera</string>
+    <string name="predict_labels_bottom_sheets">Predicts the Probability for given features in following classes</string>
+    <string name="bullet_dot">•</string>
+    <string name="probability_of">Probability of : </string>
+    <string name="no_dropout_runing_with_zero">No dropout set. Running with 0 Dropout.</string>
+    <string name="close">Close</string>
+    <string name="view_logs">View Logs</string>
+    <string name="validation_local_failed">Model Validation Failed</string>
+    <string name="log_writer">Log Writer</string>
+    <string name="log_viewer">Log Viewer</string>
+    <string name="invalid_dropout">Invalid Dropout Value. Resetting to 0</string>
+    <string name="run">Run</string>
+    <string name="all_empty">At least one value should be non zero.</string>
+    <string name="remove_offline">Delete Offline</string>
+    <string name="sure_to_remove">Are you sure?</string>
+    <string name="removal_model_failed">Something went wrong while removing that model</string>
+    <string name="alredy_downloaded">Already downloaded</string>
+    <string name="missing_or_na_model">The File is Corrupted or missing. Remove and re-download</string>
+    <string name="more_info">More Info</string>
+    <string name="garbage_run">The model produced garbage values as you entered garbage values</string>
+    <string name="or">Or</string>
+
+</resources>

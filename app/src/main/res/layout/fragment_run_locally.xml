@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. <ashar786khan@gmail.com>
+  ~ This file is part of Alphanet's Android Application.
+  ~ Alphanet 's Android Application is free software : you can redistribute it and/or modify
+  ~ it under the terms of GNU General Public License as published by the Free Software Foundation,
+  ~ either version 3 of the License, or (at your option) any later version.
+  ~
+  ~ This Application is distributed in the hope that it will be useful
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  ~ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General  Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License along with this Source File.
+  ~  If not, see <http:www.gnu.org/licenses/>.
+  -->
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_margin="8dp"
+    android:layout_marginTop="30dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.RunLocally">
+
+        <RadioGroup
+            android:id="@+id/local_run_model_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/local_run_model_type_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/raw_input" />
+
+            <RadioButton
+                android:id="@+id/local_run_model_type_conv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slate_runner" />
+
+            <RadioButton
+                android:id="@+id/local_run_model_type_recurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recurrent_network"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/local_run_model_type_gan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/generative_adv_net"
+                android:visibility="gone" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/browser_actions_bg_grey" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:id="@+id/local_run_input_feature_container"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/local_run_model_feature_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/number_of_input_features"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/browser_actions_bg_grey" />
+
+        <LinearLayout
+            android:id="@+id/local_run_type_conv_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/local_run_type_conv_inputs_width"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/width_in_pixels"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/local_run_type_conv_inputs_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/height_pixels"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/browser_actions_bg_grey" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/local_run_model_output_node_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/number_of_output_nodes"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/browser_actions_bg_grey" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/local_run_model_dropout_required"
+            android:text="@string/model_requires_a_dropout_value_to_run"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/browser_actions_bg_grey" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/local_run_model_dropout_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/dropout_probability_0_1"
+                android:inputType="numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/browser_actions_bg_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/local_run_model_proto_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/run_local_choose_file"
+                style="@style/DonateButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/choose_protobuffer_file" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/browser_actions_bg_grey" />
+
+        <Button
+            android:id="@+id/run_local_run_file"
+            style="@style/DonateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/run_this_model" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

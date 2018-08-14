@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. <ashar786khan@gmail.com>
+  ~ This file is part of Alphanet's Android Application.
+  ~ Alphanet 's Android Application is free software : you can redistribute it and/or modify
+  ~ it under the terms of GNU General Public License as published by the Free Software Foundation,
+  ~ either version 3 of the License, or (at your option) any later version.
+  ~
+  ~ This Application is distributed in the hope that it will be useful
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  ~ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General  Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License along with this Source File.
+  ~  If not, see <http:www.gnu.org/licenses/>.
+  -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_adapter_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/adapter_hr_top"
+        android:background="@color/browser_actions_bg_grey"/>
+
+    <ImageView
+        android:id="@+id/adapter_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/adapter_hr_top"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/adapter_title"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:layout_below="@id/adapter_hr_top"
+        android:layout_toEndOf="@id/adapter_icon"
+        android:maxLines="1"
+        tools:text="MNIST : Conv" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adapter_title"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/adapter_info_container"
+        android:layout_toEndOf="@id/adapter_icon">
+
+        <TextView
+            android:id="@+id/adapter_size_info"
+            android:layout_width="0dp"
+            android:maxLines="1"
+            android:layout_weight="0.75"
+            android:maxLength="25"
+            android:layout_height="wrap_content"
+            tools:text="Size : 49 MB" />
+
+        <TextView
+            android:id="@+id/adapter_upvotes"
+            android:layout_width="0dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="0.25"
+            android:maxLines="1"
+            android:maxLength="25"
+            android:layout_height="wrap_content"
+            tools:text="Upvotes: 1.23K" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/adapter_runnerUI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adapter_info_container"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@id/adapter_icon"
+        android:maxLines="1"
+        tools:text="Runner UI : Slate View" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/adapter_icon"
+        android:background="@color/browser_actions_bg_grey" />
+</RelativeLayout>
+

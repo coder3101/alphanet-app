@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. <ashar786khan@gmail.com>
+  ~ This file is part of Alphanet's Android Application.
+  ~ Alphanet 's Android Application is free software : you can redistribute it and/or modify
+  ~ it under the terms of GNU General Public License as published by the Free Software Foundation,
+  ~ either version 3 of the License, or (at your option) any later version.
+  ~
+  ~ This Application is distributed in the hope that it will be useful
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  ~ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General  Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License along with this Source File.
+  ~  If not, see <http:www.gnu.org/licenses/>.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.softminds.aislate">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AlphanetBase"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <activity
+            android:name=".activities.MainNavActivity"
+            android:label="@string/alphanet_market"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SupportActivity"
+            android:label="@string/support_us"
+            android:parentActivityName=".activities.MainNavActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".firebase.FirebaseTokenizer"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activities.runnerUI.SlateViewActivity"
+            android:label="@string/slate_runner"
+            android:parentActivityName=".activities.MainNavActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.runnerUI.RawInputActivity"
+            android:label="@string/input_runner"
+            android:parentActivityName=".activities.MainNavActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Announcements"
+            android:label="@string/announcements"
+            android:parentActivityName=".activities.MainNavActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PublishActivity"
+            android:label="Publish A New Model"
+            android:parentActivityName=".activities.MainNavActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.Faq"
+            android:label="@string/faq"
+            android:parentActivityName=".activities.MainNavActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".utils.CancelDownloadBroadCast"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="ACTION_CANCEL_DOWNLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.LogViewer"
+            android:screenOrientation="portrait"
+            android:label="@string/log_viewer"
+            android:parentActivityName=".activities.MainNavActivity"
+            />
+    </application>
+
+</manifest>

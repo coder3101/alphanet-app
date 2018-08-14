@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018. <ashar786khan@gmail.com>
+  ~ This file is part of Alphanet's Android Application.
+  ~ Alphanet 's Android Application is free software : you can redistribute it and/or modify
+  ~ it under the terms of GNU General Public License as published by the Free Software Foundation,
+  ~ either version 3 of the License, or (at your option) any later version.
+  ~
+  ~ This Application is distributed in the hope that it will be useful
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  ~ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General  Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License along with this Source File.
+  ~  If not, see <http:www.gnu.org/licenses/>.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/alphanet_market">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_feed_forward"
+                    android:icon="@drawable/ic_whatshot_black_24dp"
+                    android:title="@string/simple_feed_forward" />
+                <item
+                    android:id="@+id/nav_convolutional"
+                    android:icon="@drawable/ic_whatshot_black_24dp"
+                    android:title="@string/convolution_network" />
+                <item
+                    android:id="@+id/nav_recurrent"
+                    android:enabled="false"
+                    android:visible="false"
+                    android:icon="@drawable/ic_whatshot_black_24dp"
+                    android:title="@string/recurrent_network" />
+                <item
+                    android:id="@+id/nav_gan"
+                    android:enabled="false"
+                    android:visible="false"
+                    android:icon="@drawable/ic_whatshot_black_24dp"
+                    android:title="@string/generative_adv_net" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/alphanet_tools">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_downloaded_models"
+                    android:icon="@drawable/ic_file_download_black_24dp"
+                    android:title="@string/downloaded_models" />
+
+                <item
+                    android:id="@+id/nav_run_local_models"
+                    android:icon="@drawable/ic_play_circle_outline_black_24dp"
+                    android:title="@string/run_proto_file" />
+
+                <item
+                    android:id="@+id/nav_publish_models"
+                    android:icon="@drawable/ic_publish_black_24dp"
+                    android:visible="false"
+                    android:title="@string/publish_model" />
+
+                <item
+                    android:id="@+id/nav_contribute"
+                    android:visible="false"
+                    android:enabled="false"
+                    android:icon="@drawable/ic_people_black_24dp"
+                    android:title="@string/contribute_and_request" />
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="@string/support_app">
+        <menu>
+
+            <item
+                android:id="@+id/nav_announcements"
+                android:checkable="false"
+                android:icon="@drawable/ic_announcement_black_24dp"
+                android:title="@string/announcements" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/ic_favorite_black_24dp"
+                android:title="@string/support" />
+
+            <item
+                android:id="@+id/nav_faq"
+                android:icon="@drawable/ic_question_answer_black_24dp"
+                android:title="@string/faq" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_error_black_24dp"
+                android:title="@string/about" />
+        </menu>
+    </item>
+
+</menu>

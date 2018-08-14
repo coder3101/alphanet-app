@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. <ashar786khan@gmail.com>
+  ~ This file is part of Alphanet's Android Application.
+  ~ Alphanet 's Android Application is free software : you can redistribute it and/or modify
+  ~ it under the terms of GNU General Public License as published by the Free Software Foundation,
+  ~ either version 3 of the License, or (at your option) any later version.
+  ~
+  ~ This Application is distributed in the hope that it will be useful
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  ~ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General  Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License along with this Source File.
+  ~  If not, see <http:www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string-array name="questions">
+        <item>How do i run my own protobuffer file ?</item>
+        <!--<item>How can I publish a model?</item>-->
+        <!--<item>My Model needs a Special UI to run? How can run it?</item>-->
+        <item>What are Runner UI ?</item>
+        <!--<item>I published a model and it was rejected. What could be the reason behind it?</item>-->
+        <item>It would be great if you can add XYZ feature.</item>
+        <!--<item>My models takes a lot of time to run and produce the results. How can i optimize it?</item>-->
+        <item>This Application is powered by TensorFlow Mobile, why not TFlite?</item>
+        <item>I ran a model after downloading but it produces very bad results. Why do you allow such models to be in the market?</item>
+        <item>Why Only Integers or Floats are accepted as input to a model. What about other dtypes?</item>
+    </string-array>
+
+    <string-array name="answers">
+        <item>You can run your own proto buffer file easily. Create the Model using Tensorflow name the placeholder for input as "<b>input</b>"
+            the output operation as "<b>output</b>", if you need dropout, name that placeholder as
+            "<b>dropout</b>". Design you model in such a way that "input" gets a shape of [1, N]
+            as float32 { N is number of features }. In case, you want to use SlateView.
+            Make sure that your model takes normalized values of pixel (i.e : Pixel value divided by 255).
+            When you are done, export the graph as .pb or .pbtxt. Use the tensorflow tool to freeze the graph, then optimize it. Run the optimized version here.
+        In future we will document this briefly on our website. Stay Tuned</item>
+        <!--<item>We want you to publish your first model. We have kept it as easy as possible.-->
+            <!--There is a complete tutorial on our website that shows how to build a model using tensorflow or keras and then run it on alphanet.</item>-->
+        <!--<item>We accepted the fact that currently we have only a few of UI designs to run your models.-->
+            <!--We understand that your model may need Coloured boards or that it may need to directly load a image or a media file to inference on it.-->
+            <!--We are working on this and soon we will add some more Runner UI's to the app.</item>-->
+        <item>When your model loads and is ready for inference, then it needs some input.
+            For a Feed forward a set of vectors or pixel values for Convolutions,
+            the UI that asks users about these values are called Runner UIs</item>
+        <!--<item>There could be a lot of reasons behind this, most common being Poor Performance,-->
+            <!--Crashes, or Models that takes a lot of time to produce output.-->
+            <!--We are working to notify you with email about exact reason why your model was rejected.-->
+            <!--There could be some more reasons of rejections, all of them are mentioned in the website.</item>-->
+        <item>It will be nice to add that feature but for now we are working on developing the core of the app.
+            Lets first complete basic functionality then we will do that feature.</item>
+        <!--<item>Very Easy, Your model is doing a lot of computations so it is slow,-->
+            <!--try decreasing some layers or optimize your models by Quantizing your weights.-->
+            <!--Follow Tensorflow Website for more reference.</item>-->
+        <item>While we are planning to shift to TensorFlowLite as soon as it is available in stable channel.
+            TFLite does not supports some Operations so we are using TensorFlowMobile.
+            We are anticipated to shift to TensorFlow lite as soon as we think it is good.</item>
+        <item>Oh Very Sorry for that, We test all new models before they make their way to public.
+            In some cases due to test-train data distribution mismatches, causes a model to perform very poor.
+            This can be due to many factors, including geographical factors.
+            Hold up tight we will notify the publisher about this problem,
+            and soon we will model review section, so you can directly review any model you want.
+        </item>
+        <item>
+            Currently we only support feeding and extracting Integers or Float Values to/from a model.
+            We may support other data types like Strings in future. They will get there way as soon as Recurrent Models are supported by us.
+        </item>
+    </string-array>
+
+</resources>
