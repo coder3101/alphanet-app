@@ -18,7 +18,4 @@
     <string name="facebook_application_id" translatable="false">117433075731713</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fb117433075731713</string>
     <!-- Twitter consumer key and secret -->
-    <string name="twitter_consumer_key" translatable="false">SUwXcpCwTPuCmQsJW2cwW850Z</string>
-    <string name="twitter_consumer_secret" translatable="false">8j9lPECIX2DXfH4g4m0ESIncKtMINkgYeSlPnh89rUPQnBb5MJ
-</string>
 </resources>
