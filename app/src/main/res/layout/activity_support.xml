@@ -16,6 +16,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:scrollbars="none"
     android:layout_height="match_parent"
     tools:context=".activities.SupportActivity">
 
@@ -23,7 +24,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/support_icon"
@@ -49,6 +50,7 @@
             android:text="@string/support_improve"
             android:textAlignment="center"
             android:textColor="@android:color/black"
+            android:background="#F5F5F5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,65 +68,66 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginStart="55dp"
                 android:layout_marginTop="20dp"
                 android:onClick="purchaseSupport1"
                 android:text="@string/support_with_1"
-                android:textColor="@android:color/white" />
+                android:textColor="#000000"
+                android:background="#F5F5F5"
+                tools:ignore="OnClick" />
 
             <Button
                 style="@style/DonateButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginStart="55dp"
                 android:onClick="purchaseSupport3"
                 android:text="@string/support_with_3"
-                android:textColor="@android:color/white" />
+                android:textColor="#000000"
+                android:background="#F5F5F5"
+                tools:ignore="OnClick" />
 
             <Button
                 style="@style/DonateButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginStart="55dp"
                 android:layout_marginTop="10dp"
                 android:onClick="purchaseSupport5"
                 android:text="@string/support_with_5"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/or"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:textSize="20sp"
-                />
+                android:textColor="#000000"
+                android:background="#F5F5F5"
+                tools:ignore="OnClick" />
 
 
             <Button
                 style="@style/DonateButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginStart="55dp"
                 android:layout_marginTop="10dp"
                 android:onClick="paypalSupport"
-                android:text="@string/support_with_5"
-                android:textColor="@android:color/white" />
+                android:text="@string/paypal_support_text"
+                android:textColor="#000000"
+                android:background="#F5F5F5"
+                tools:ignore="OnClick" />
 
             <Button
                 style="@style/DonateButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginStart="55dp"
                 android:layout_marginTop="10dp"
                 android:onClick="btcSupport"
-                android:text="@string/support_with_5"
-                android:textColor="@android:color/white" />
+                android:text="@string/btc_support"
+                android:textColor="#000000"
+                android:background="#F5F5F5"
+                tools:ignore="OnClick" />
 
         </LinearLayout>
 
