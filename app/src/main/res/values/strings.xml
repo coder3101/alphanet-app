@@ -57,6 +57,8 @@
     <string name="support_with_1">Support with $ 1</string>
     <string name="support_with_3">Support with $ 3</string>
     <string name="support_with_5">Support with $ 5</string>
+    <string name="paypal_support_text">Support on Paypal</string>
+    <string name="btc_support">Support with Bit-Coin</string>
     <string name="important_info">Important Information</string>
     <string name="key_is_shown_info">is_shown_info</string>
     <string name="pref_name">temp</string>
