@@ -41,13 +41,12 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.mikepenz.aboutlibraries.Libs
 import com.mikepenz.aboutlibraries.LibsBuilder
-import com.softminds.aislate.R
 import com.softminds.aislate.AlphanetBase
 import com.softminds.aislate.BuildConfig
+import com.softminds.aislate.R
 import com.softminds.aislate.fragments.*
 import com.softminds.aislate.utils.Constants
 import kotlinx.android.synthetic.main.activity_main_slate.*
-import kotlinx.android.synthetic.main.activity_slate_view.*
 import kotlinx.android.synthetic.main.app_bar_main_slate.*
 import kotlinx.android.synthetic.main.content_main_slate.*
 import java.util.*
@@ -116,7 +115,6 @@ class MainNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
                     .setCancelable(false)
                     .show()
         }
-
     }
 
     private fun loadConfigs() {
@@ -125,7 +123,7 @@ class MainNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
         map["allow_publish"] = false
         mFirebaseRemoteConfig.setDefaults(map as Map<String, Boolean>?)
 
-        mFirebaseRemoteConfig.fetch(if (BuildConfig.DEBUG) 0 else  60 * 1000)
+        mFirebaseRemoteConfig.fetch(if (BuildConfig.DEBUG) 0 else 60 * 1000)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Log.d("Firebase Fetch : ", "Fetch Succeeded")
@@ -192,6 +190,34 @@ class MainNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
                             Toast.makeText(applicationContext, getString(R.string.no_email_app), Toast.LENGTH_SHORT).show()
                     }
         }
+        if (R.id.nav_announcements == item.itemId) {
+
+            startActivity(Intent(this, Announcements::class.java))
+        }
+        if (R.id.nav_about == item.itemId){
+            LibsBuilder()
+                    .withAboutDescription(getString(R.string.app_description))
+                    .withActivityStyle(Libs.ActivityStyle.LIGHT_DARK_TOOLBAR)
+                    .withAboutIconShown(true)
+                    .withAboutVersionShown(true)
+                    .withAboutAppName(getString(R.string.app_name))
+                    .withLicenseDialog(true)
+                    .withActivityTitle(getString(R.string.about))
+                    .withAutoDetect(true)
+                    .start(this)
+        }
+        if (R.id.nav_share == item.itemId){
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_message))
+            startActivity(intent)
+        }
+        if(R.id.nav_support == item.itemId){
+            startActivity(Intent(this, SupportActivity::class.java))
+        }
+        if (R.id.nav_faq == item.itemId){
+            startActivity(Intent(this, Faq::class.java))
+        }
         return true
     }
 
@@ -256,38 +282,6 @@ class MainNavActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
 //                        .setOnCancelListener { nav_view.setCheckedItem(lastSelected) }
 //                        .show()
 //            }
-
-            R.id.nav_announcements -> {
-                startActivity(Intent(this, Announcements::class.java))
-            }
-
-
-            R.id.nav_about -> {
-                LibsBuilder()
-                        .withAboutDescription(getString(R.string.app_description))
-                        .withActivityStyle(Libs.ActivityStyle.LIGHT_DARK_TOOLBAR)
-                        .withAboutIconShown(true)
-                        .withAboutVersionShown(true)
-                        .withAboutAppName(getString(R.string.app_name))
-                        .withLicenseDialog(true)
-                        .withActivityTitle(getString(R.string.about))
-                        .withAutoDetect(true)
-                        .start(this)
-            }
-
-            R.id.nav_share -> {
-                val intent = Intent(Intent.ACTION_SEND)
-                intent.type = "text/plain"
-                intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_message))
-                startActivity(intent)
-            }
-            R.id.nav_support -> {
-                startActivity(Intent(this, SupportActivity::class.java))
-            }
-            R.id.nav_faq -> {
-                startActivity(Intent(this, Faq::class.java))
-            }
-
 
         }
 

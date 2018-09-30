@@ -136,7 +136,7 @@ class PublishActivity : AppCompatActivity(), ModelManipulator.UploadListener, Pr
                 }, 1000)
                 //dynamically create the views
 
-                val m = resources.getDimensionPixelOffset(R.dimen.standard_margin);
+                val m = resources.getDimensionPixelOffset(R.dimen.standard_margin)
 
                 if (publish_type.checkedRadioButtonId == R.id.publish_type_feed) {
                     for (i in 0 until (Integer.parseInt(publish_feed_input.text.toString()))) {

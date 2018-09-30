@@ -75,35 +75,4 @@
         </menu>
     </item>
 
-
-    <item android:title="@string/support_app">
-        <menu>
-
-            <item
-                android:id="@+id/nav_announcements"
-                android:checkable="false"
-                android:icon="@drawable/ic_announcement_black_24dp"
-                android:title="@string/announcements" />
-
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_share_black_24dp"
-                android:title="@string/share" />
-            <item
-                android:id="@+id/nav_support"
-                android:icon="@drawable/ic_favorite_black_24dp"
-                android:title="@string/support" />
-
-            <item
-                android:id="@+id/nav_faq"
-                android:icon="@drawable/ic_question_answer_black_24dp"
-                android:title="@string/faq" />
-
-            <item
-                android:id="@+id/nav_about"
-                android:icon="@drawable/ic_error_black_24dp"
-                android:title="@string/about" />
-        </menu>
-    </item>
-
 </menu>
