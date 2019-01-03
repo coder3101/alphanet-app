@@ -10,7 +10,7 @@ Alphanet is a neural network market place for Android. It uses Tensorflow Mobile
 
 Runner UI are the User Interface that interacts with the end user to get values. They are the UI that are responsible for taking inputs from User in a beautiful way. These UI's are a separte activity and must inherit from RunnerUI Base.
 
-Currently we support the following Runner UI's :
+Currently we support the following Runner UI's:
 
 1. **Raw Input** : As the name suggests this UI is used when you are expecting a user to input Raw values currently only float32 values are allowed.
 2. **SlateView** : This UI is generally used with Convolutional neural network and draws a slate on `n x m` pixel wide on the screen. The User can draw on the slate and slate records the values in greyscale. **THE VALUES THE SLATE UI RETURNS IS NORMALIZED WITH 255**
