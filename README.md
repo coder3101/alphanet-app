@@ -1,6 +1,6 @@
 # Alphanet : Neural Network Marketplace for Android
 
-Alphanet is a neural network market place for Android. It uses Tensorflow Mobile and performs inference on device inference without any internet connectivity. Just download the model of you choice feed in the values and run.
+Alphanet is a neural network market place for Android. It uses Tensorflow Mobile and performs inference on device inference without any internet connect ivity. Just download the model of you choice feed in the values and run.
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=com.softminds.aislate)
 
