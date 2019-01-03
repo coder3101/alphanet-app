@@ -70,7 +70,7 @@ def save_and_generate_proto(session, name=None):
   f2.close()
 ```
 
-Simply pass the tensorflow session and the name to this function and it should generate all the required files. Most importantly it will generate *optimized_model-name.pb*, this is the file that you need to run in the app with **Run Proto File**
+Simply pass the tensorflow session and the name to this function and it should generate all the required files. Most importantly it will generate *optimized_model-name.pb*, this is the file that you need to run in the app with **Run Proto File.**
 
 **NOTE : YOU MUST NAME YOUR OUTPUT PRODUCING OPERATION AS *output*  AND SINGLE INPUT PLACEHOLDER AS *input* . AS FOR THE DROPOUT YOU MUST SELECT "REQUIRES DROPOUT" WHEN RUNNING THE MODEL IN THE APPLICATION**.
 
